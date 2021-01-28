@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SML</title>
+	<link rel="icon" href="user (3).svg"/>
+	<meta name="viewport"content="width=device-width,initial-scale=1.0">
+
+<style>
+		.parent{
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			justify-content:center;
+			flex-wrap:wrap;
+		}
+		.child{
+			
+			border: 1px solid rgb(3,123,145);
+			font-size:50px;
+			padding:1%;
+			margin:1%;
+			width: 20%;
+			justify-content: space-between;
+		}
+		   /*Small scale devices*/
+		@media only screen and(min-width: 320px) and (max-width: 480px)
+		{
+			.child{
+				width: 50%
+				font-size:50%;
+				background:#D4D461;
+			}
+
+		}
+		/*medium scale devices*/
+		@media only  screen and (min-width: 481px) and (max-width: 767px)
+		{
+			.child
+			{
+				width: 40%;
+				font-weight:600;
+				border: 3px solid #000;
+				border-radius:10px;
+				box-shadow: 3px 3px rgb(170,46,46);
+				
+			}
+
+		}
+		/*Large scale devices*/
+		@media only screen and (min-width:768px)and (max-width:1024px)
+		{
+			.child{
+				width: 25%;
+				box-shadow:0px 8px 8px -8px #000000;
+			}
+		}
+		
+	</style>
+	</head>
+<body>
+
+	<section class="parent">
+		<article class="child"> A         </article>
+		<article class="child"> B   </article>
+		<article class="child"> C </article>
+		<article class="child">D  </article>
+		
+
+	</section>
+</body>
+</html>
